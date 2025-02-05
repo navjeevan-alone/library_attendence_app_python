@@ -1,0 +1,40 @@
+/* Basic styling for dialogs, buttons, and tables */
+QDialog {
+    background-color: #f7f7f7;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+QPushButton {
+    background-color: #3498db;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+QPushButton:hover {
+    background-color: #2980b9;
+}
+
+QLineEdit, QDateEdit {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 4px;
+    font-size: 14px;
+}
+
+QTableWidget {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+QHeaderView::section {
+    background-color: #3498db;
+    color: white;
+    padding: 4px;
+    border: none;
+}
+
+QMessageBox {
+    background-color: #f7f7f7;
+}
