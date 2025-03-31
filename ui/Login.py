@@ -1,5 +1,5 @@
 from PyQt5 import QtCore, QtWidgets, QtGui
-from Register import RegistrationDialog
+from ui.Register import RegistrationDialog
 # Login Dialog
 class LoginDialog(QtWidgets.QDialog):
     def __init__(self, db_handler, parent=None):

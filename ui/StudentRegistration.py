@@ -3,10 +3,10 @@ from PyQt5 import QtCore, QtWidgets, QtGui
 class StudentRegistrationDialog(QtWidgets.QDialog):
     def __init__(self, student_id, db_handler, organization_id, parent=None):
         super().__init__(parent)
-        self.setWindowTitle("Register Student")
         self.db_handler = db_handler
         self.student_id = student_id
         self.organization_id = organization_id
+        self.setWindowTitle("Register Student")
         self.setup_ui()
 
     def setup_ui(self):
