@@ -1,3 +1,4 @@
+/* Deprecated : Use new dark-theme.qss */
 /* Basic styling for dialogs, buttons, and tables */
 QDialog {
     background-color: #f7f7f7;

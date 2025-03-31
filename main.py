@@ -31,7 +31,7 @@ class LoginDialog(QtWidgets.QDialog):
         self.login_btn.clicked.connect(self.login)
         layout.addWidget(self.login_btn)
 
-        register_link = QtWidgets.QLabel('<a href="#">Register as new user</a>')
+        register_link = QtWidgets.QLabel('<a href="#" style="color:white" >Register as new user</a>')
         register_link.setAlignment(QtCore.Qt.AlignCenter)
         register_link.setOpenExternalLinks(False)
         register_link.linkActivated.connect(self.open_registration)
@@ -63,6 +63,7 @@ class RegistrationDialog(QtWidgets.QDialog):
         self.setWindowTitle("User Registration")
 
     def setup_ui(self):
+        
         layout = QtWidgets.QVBoxLayout()
         form_layout = QtWidgets.QFormLayout()
 
@@ -316,7 +317,7 @@ if __name__ == "__main__":
     app = QtWidgets.QApplication(sys.argv)
     # Load QSS styling
     try:
-        with open("style.qss", "r") as f:
+        with open("dark-theme.qss", "r") as f:
             app.setStyleSheet(f.read())
     except Exception:
         pass
